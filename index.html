@@ -1,87 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Jonathan C. Cervantes</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leaf Tabs</title>
+<style>
+    .container {
+        background-color: #579aff;
+    }
+    .leaf-tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .leaf-tab {
+        position: relative;
+        width: 202.42px;
+        height: 202.42px;
+        margin: -10px 50px;
+        background-color: #E6E8DA;
+        border-radius: 50% 50% 50% 0;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        transform: rotate(227deg);
+    }
+    .leaf-tab.active {
+        background-color: #98AA1E;
+        transform: rotate(227deg) scale(1.1);
+    }
+    .leaf-tab.active .leaf-content {
+        color: white;
+    }
+    .leaf-tab .leaf-content {
+        position: absolute;
+        width: 139.09px;
+        height: 47.49px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-227deg);
+        text-align: center;
+        color: #3D4B32;
+        transition: color 0.3s ease-in-out;
+    }
+    .leaf-tab .leaf-content img {
+        width: 70px;
+        display: block;
+        margin: 0 auto 10px;
+        margin-top: -20px;
+    }
+    #tab-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 900px;
+        margin: 20px;
+        color: #3D4B32;
+        padding: 20px;
+    }
+    #tab-content h3 {
+        color: #ffffff;
+    }
+    .tab-name {
+        color: #3D4B32;
+        font-weight: 600;
+        font-size: 20px;
+        transition: color 0.3s ease-in-out;
+    }
+    .leaf-tab.active .tab-name {
+        color: white;
+    }
+    .tab-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .tab-section img {
+        width: 468px;
+        height: 354px;
+        border: 1px solid #98AA1E;
+        margin-bottom: 20px;
+    }
+    .tab-section h4 {
+        margin: 0 0 10px;
+    }
+    .tab-section p {
+        margin: 0;
+    }
+    .cont-1, .cont-2 {
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont-1 img, .cont-2 img {
+        width: 464px;
+        height: auto;
+        margin-right: 10em;
+    }
+    .text-content {
+        width: 740px;
+        height: 139.12px;
+    }
+    .text-content p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 35.2px;
+    }
+    .text-content h4 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 38.4px;
+    }
+</style>
 </head>
 <body>
-
-    <div class="container">
-        <div class="header">
-            <img src="assets/profile.png" alt="Profile Picture" class="profile-picture">
-            <h1>Jonathan C. Cervantes</h1>
+<div class="container">
+    <div class="leaf-tabs">
+        <div class="leaf-tab active" data-active-img="Mask group (4).png" data-inactive-img="Mask group.png">
+            <div class="leaf-content">
+                <img src="Mask group.png">
+                <p class="tab-name">Tab 1</p>
+            </div>
         </div>
-
-        <div class="section">
-            <h2>Contact Me</h2>
-            <ul class="contact-info">
-                <li>Phone: 09929652830 / 09393002475</li>
-                <li>Email: <a href="mailto:jonathancolasito.cervantes@gmail.com">jonathancolasito.cervantes@gmail.com</a></li>
-                <li>Email: <a href="mailto:jonathancolasito.cervantes@outlook.com">jonathancolasito.cervantes@outlook.com</a></li>
-            </ul>
+        <div class="leaf-tab" data-active-img="Mask group (3).png" data-inactive-img="Expanded (1).png">
+            <div class="leaf-content">
+                <img src="Expanded (1).png">
+                <p class="tab-name">Tab 2</p>
+            </div>
         </div>
-
-        <div class="section">
-            <h2>Language</h2>
-            <ul class="languages">
-                <li>Filipino</li>
-                <li>English</li>
-            </ul>
+        <div class="leaf-tab" data-active-img="Mask group (2).png" data-inactive-img="Vector (3).png">
+            <div class="leaf-content">
+                <img src="Vector (3).png">
+                <p class="tab-name">Tab 3</p>
+            </div>
         </div>
-
-        <div class="section">
-            <h2>About Me</h2>
-            <p>As a future graduate in Computer Science, I am passionate about technology and design, with a solid grounding in programming, ready to apply my talents to a company that fosters innovation and artistic expression.</p>
-        </div>
-
-        <div class="section">
-            <h2>Education</h2>
-            <p>General Ricardo G. Papa Sr. Memorial High School Annex : Information Communication Technology - Computer System Servicing (2018 - 2020)</p>
-            <p>Technical Education And Skills Development Authority - TESDA : Computer System Servicing - National Certificate II (2019)</p>
-            <p>Taguig City University - TCU : Bachelor Of Science in Computer Science - CICT Academic Excellence Award (2020 - Present)</p>
-        </div>
-
-        <div class="section">
-            <h2>Job Experience</h2>
-            <p>Popeyes Louisiana Kitchen (PLK) | Vista Mall : Guest Ambassador (Service Crew) (August 2023 - January 2024)</p>
-            <p>Upwork : Illustrator (Upwork Freelancer) (2023 - Present)</p>
-            <p>Elinnov Technologies, Inc. : Software Engineer (Intern/Part-Time) (February 2024 - June 2024)</p>
-        </div>
-
-        <div class="section">
-            <h2>Project Experience</h2>
-            <p>Computer Science Voting System (Web-based System): UX/UI Designer</p>
-            <p>Comic / Sequential Art : Freelance Illustrator</p>
-            <p>DarkFall : A 2D game development using pathfinding: UX/UI Designer, Game Design</p>
-            <p>SusTek : Website Project: Front-End (Intern/Part-Time)</p>
-        </div>
-
-        <div class="section">
-            <h2>Skills</h2>
-            <h3>Competent With</h3>
-            <ul class="skills">
-                <li>Sequential Arts</li>
-                <li>Digital Visual Arts</li>
-                <li>Figma Design</li>
-                <li>Photo Editing</li>
-                <li>Graphic Designing</li>
-            </ul>
-            <h3>Familiar With</h3>
-            <ul class="skills">
-                <li>Computer System Servicing</li>
-                <li>Video Editing</li>
-                <li>Front-End Web Design</li>
-                <li>WordPress - Elementor</li>
-                <li>Computer Troubleshooting</li>
-                <li>Adobe Experience Manager</li>
-                <li>MySql Database</li>
-                <li>Python / Java / C# / React</li>
-            </ul>
+        <div class="leaf-tab" data-active-img="Mask group (1).png" data-inactive-img="Vector (1) (1).png">
+            <div class="leaf-content">
+                <img src="Vector (1) (1).png">
+                <p class="tab-name">Tab 4</p>
+            </div>
         </div>
     </div>
 
+    <div id="tab-content">
+        <div class="tab-section" id="tab1-content">
+            <div class="cont-1">
+                <div>
+                    <img src="Graph-4-1 1.png">
+                </div>
+                <div class="text-content">
+                    <h4>Centralized Data Management</h4>
+                    <p>Simplify and streamline data collection, integrate and analysis complex ESG data. Saving time and reducing the need for extensive manual processes.</p>
+                </div>
+            </div>
+            <div class="cont-2">
+                <div>
+                    <img src="Graph-5-1.png" alt="Image for Tab 1">
+                </div>
+                <div class="text-content">
+                    <h4>Pre-built ESG framework library</h4>
+                    <p>Leverage on our repository of information and align with international frameworks and corporate reporting standards that most fit ESG reporting approach for your organization such as SASB, TCFD and GRI.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-section" id="tab2-content">
+            <div class="cont-1">
+                <div>
+                    <img src="Graph-1-1.png" alt="Image for Tab 2">
+                </div>
+                <div class="text-content">
+                    <h4>ESG Materiality Assessment</h4>
+                    <p>Built-in tools for conducting ESG materiality assessments help your organization identify and prioritize the most relevant sustainability issues based on your potential impact on business performance and stakeholder interests.</p>
+                </div>
+            </div>
+            <div class="cont-2">
+                <div>
+                    <img src="Graph-2-1.png" alt="Image for Tab 2">
+                </div>
+                <div class="text-content">
+                    <h4>Carbon Footprint Tracking</h4>
+                    <p>Advanced carbon accounting capabilities to allow your organization to measure and monitor your carbon footprint across the value chain, identifying areas for emissions reduction and carbon offsetting.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-section" id="tab3-content">
+            <div class="cont-1">
+                <div>
+                    <img src="Graph-3-1.png" alt="Image for Tab 3">
+                </div>
+                <div class="text-content">
+                    <h4>Supply Chain Transparency</h4>
+                    <p>Supply chain mapping tools to enable your organization to assess the sustainability performance of suppliers and identify risks and opportunities for improvement, promoting transparency and responsible sourcing practices.</p>
+                </div>
+            </div>
+            <div class="cont-2">
+                <div>
+                    <img src="Graph-3-1.png" alt="Image for Tab 3">
+                </div>
+                <div class="text-content">
+                    <h4>Mitigation and Risk Control</h4>
+                    <p>Risk assessment modules help your organization to identify and mitigate ESG-related risks and opportunities, such as climate change, supply chain disruptions, and regulatory compliance issues, safeguarding business continuity and reputation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-section" id="tab4-content">
+            <div class="cont-1">
+                <div>
+                    <img src="Graph-4-1 1.png" alt="Image for Tab 4">
+                </div>
+                <div class="text-content">
+                    <h4>Unified & Customizable Dashboard</h4>
+                    <p>User-friendly & customizable dashboards to provide a centralized view of all sustainability metrics, allowing you to track key performance indicators (KPIs) across environmental, social, and governance categories in real-time.</p>
+                </div>
+            </div>
+            <div class="cont-2">
+                <div>
+                    <img src="Graph-4-1 1.png" alt="Image for Tab 4">
+                </div>
+                <div class="text-content">
+                    <h4>Generative AI Reporting</h4>
+                    <p>Flexible reporting capabilities enable you to generate analysis and narrative for a data-driven sustainability report to tailor specific needs, including reporting requirements and guidelines issued by SGX, compliance reports, stakeholder reports, and sustainability performance dashboards.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    (function($) {
+        $(window).on('elementor/frontend/init', function() {
+            function changeTab(tabNumber) {
+                $('.leaf-tab').removeClass('active');
+                $('.leaf-tab:nth-child(' + tabNumber + ')').addClass('active');
+
+                $('.tab-section').hide();
+                $('#tab' + tabNumber + '-content').show();
+            }
+
+            function updateImages() {
+                $('.leaf-tab').each(function() {
+                    var $tab = $(this);
+                    var $img = $tab.find('img');
+                    var activeImg = $tab.data('active-img');
+                    var inactiveImg = $tab.data('inactive-img');
+                    if ($tab.hasClass('active')) {
+                        $img.attr('src', activeImg);
+                    } else {
+                        $img.attr('src', inactiveImg);
+                    }
+                });
+            }
+
+            $(document).ready(function() {
+                changeTab(1);
+                updateImages();
+
+                $('.leaf-tab').click(function() {
+                    var tabIndex = $(this).index() + 1;
+                    changeTab(tabIndex);
+                    updateImages();
+                });
+            });
+        });
+    })(jQuery);
+</script>
 </body>
 </html>
