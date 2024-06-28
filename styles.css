@@ -146,7 +146,9 @@
     font-weight: 500;
     line-height: 38.4px;
 }
-
+.content-2{
+    width: 1300px;
+}
 /* Cards */
 .card-1 {
     background-color: #98AA1E;
