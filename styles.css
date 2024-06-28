@@ -126,3 +126,93 @@
     font-weight: 500;
     line-height: 38.4px;
 }
+
+.card-1 {
+    background-color: #98AA1E;
+    height: 589px;
+    margin-left: 22px;
+    margin-right: 22px;
+    width: 400px;
+    text-align: left;
+    background-image: url(Assets/Frame\ 5.png);
+    background-size: 333px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: left;
+    transition: border 0.3s ease, height 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.card-1.active-card {
+    border: none; /* Remove border for active card */
+}
+
+.card-1:not(.active-card) {
+    height: 471px; /* Set height for inactive cards */
+    background-color: #E6E8DA; /* Default background color for inactive cards */
+    background-image: none; /* Hide background image for inactive cards */
+    text-align: left;
+}
+
+.card-1:not(.active-card) .bg img {
+    display: none; /* Hide card image for inactive cards */
+}
+
+.card-1:not(.active-card) h3,
+.card-1:not(.active-card) p {
+    color: #3D4B32; /* Default text color for inactive cards */
+}
+
+.card-1:not(.active-card) .bg {
+    align-self: top; /* Align content to top for inactive cards */
+}
+
+/* Buttons */
+.button {
+    width: 119.83px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.bg {
+    padding-left: 53px;
+    padding-right: 53px;
+    padding-top: 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg img {
+    width: 262px;
+    height: auto;
+    align-self: center;
+}
+
+.card-1 h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33.6px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: white;
+    align-self: center;
+}
+
+.card-1 p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: white;
+    align-self: center;
+}
