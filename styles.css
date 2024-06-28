@@ -1,3 +1,17 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container-2 {
+    height: 590px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Leaf Tabs */
 .leaf-tabs {
     display: flex;
     justify-content: center;
@@ -23,7 +37,7 @@
 }
 
 .leaf-tab.active .leaf-content {
-    color: white;
+    color: white; /* Change font color to white when tab is active */
 }
 
 .leaf-tab .leaf-content {
@@ -39,12 +53,24 @@
 }
 
 .leaf-tab .leaf-content img {
-    width: 70px;
+    width: 60px;
     display: block;
     margin: 0 auto 10px;
     margin-top: -20px;
 }
 
+.tab-name {
+    color: #3D4B32;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out; /* Smooth transition for text color change */
+}
+
+.leaf-tab.active .tab-name {
+    color: white; /* Change text color to white when tab is active */
+}
+
+/* Tab Content */
 #tab-content {
     display: flex;
     flex-direction: column;
@@ -52,23 +78,17 @@
     justify-content: center;
     height: 900px;
     margin: 20px;
-    color: #3D4B32;
+    color: #3D4B32; /* Default text color for tab content */
     padding: 20px;
 }
 
+#tab-content img {
+    border: 7px solid #98AA1E;
+    border-radius: 20px;
+}
+
 #tab-content h3 {
-    color: #ffffff;
-}
-
-.tab-name {
-    color: #3D4B32;
-    font-weight: 600;
-    font-size: 20px;
-    transition: color 0.3s ease-in-out;
-}
-
-.leaf-tab.active .tab-name {
-    color: white;
+    color: #ffffff; /* Default text color for tab content heading */
 }
 
 .tab-section {
@@ -99,15 +119,15 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* This centers the children horizontally */
+    align-items: center; /* This centers the children vertically */
 }
 
 .cont-1 img,
 .cont-2 img {
-    width: 400px;
-    height: auto;
-    margin-right: 5em;
+    width: 464px; /* Fixed width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10em;
 }
 
 .text-content {
@@ -127,6 +147,7 @@
     line-height: 38.4px;
 }
 
+/* Cards */
 .card-1 {
     background-color: #98AA1E;
     height: 589px;
