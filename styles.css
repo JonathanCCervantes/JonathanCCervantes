@@ -27,7 +27,7 @@
 }
 
 .leaf-tab.active .leaf-content {
-    color: white; /* Change font color to white when tab is active */
+    color: white;
 }
 
 .leaf-tab .leaf-content {
@@ -56,23 +56,23 @@
     justify-content: center;
     height: 900px;
     margin: 20px;
-    color: #3D4B32; /* Default text color for tab content */
+    color: #3D4B32;
     padding: 20px;
 }
 
 #tab-content h3 {
-    color: #ffffff; /* Default text color for tab content heading */
+    color: #ffffff;
 }
 
 .tab-name {
     color: #3D4B32;
     font-weight: 600;
     font-size: 20px;
-    transition: color 0.3s ease-in-out; /* Smooth transition for text color change */
+    transition: color 0.3s ease-in-out;
 }
 
 .leaf-tab.active .tab-name {
-    color: white; /* Change text color to white when tab is active */
+    color: white;
 }
 
 .tab-section {
@@ -103,14 +103,14 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center; /* This centers the children horizontally */
-    align-items: center; /* This centers the children vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .cont-1 img,
 .cont-2 img {
-    width: 464px; /* Fixed width */
-    height: auto; /* Maintain aspect ratio */
+    width: 464px;
+    height: auto;
     margin-right: 10em;
 }
 
