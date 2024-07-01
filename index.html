@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" href="assets/Group 45.png" sizes="40x40" type="image/x-icon">
     <title>Jonathan Cervantes</title>
 </head>
 <body>
+    <div class="body">
     <div class="header">
         <div class="logo"><img src="assets/Mask group.png"></div>
         <div class="nav">
             <div class="heading"><p>JONATHAN C. CERVANTES</p></div>
             <div class="vert-line"></div>
-            <div class="button"><a href="#"><img src="assets/Mask group (1).png"></a></div>
+            <div class="button"><a href="#" id="openModalBtn"><img src="assets/Mask group (1).png"></a></div>
             <div class="button"><a href="#"><img src="assets/Mask group (2).png"></a></div>
             <div class="button"><a href="#"><img src="assets/Mask group (3).png"></a></div>
             <div class="button"><a href="#"><img src="assets/Mask group (4).png"></a></div>
@@ -176,5 +177,37 @@
             </div>
         </div>
     </div>
+    </div>
+    <div class="modal-body" id="modal">
+        <div class="modal">
+            <div class="modal-head">
+                <div class="modal-heading">
+                    <p>Personal Information</p>
+                </div>
+                <div class="close-modal" id="closeModalBtn">
+                    <a href="#">CLOSE</a>
+                </div>
+            </div>
+            <div class="modal-cont">
+                <div class="info-line">
+                    <p><span>Full Name: </span>Jonathan C. Cervantes</p>
+                    <p><span>Nickname: </span>Tan</p>
+                    <p><span>Age: </span>24</p>
+                </div>
+                <div class="info-line">
+                    <p><span>Birth Date: </span>September 20, 1999</p>
+                    <p><span>Birth of Place: </span>Pasig City</p>
+                </div>
+                <div class="info-line">
+                    <p><span>Language: </span>English / Filipino</p>
+                    <p><span>Interest: </span>Digital/Traditional Arts</p>
+                </div>
+                <div class="info-line">
+                    <p><span>Pen Name: </span>Tan Cervantes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js" type="module"></script>
 </body> 
 </html>
