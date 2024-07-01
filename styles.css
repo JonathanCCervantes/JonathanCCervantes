@@ -4,9 +4,14 @@ body {
     background-position: center; 
     background-attachment: fixed;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -18,7 +23,6 @@ img {
     padding: 0;
     width: 1121px;
     height: 48px;
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +87,6 @@ img {
     padding: 0;
     width: 1121px;
     height: 700px;
-    margin: 100px;
     margin-top: 19px;
 }
 
@@ -100,7 +103,7 @@ img {
     position: relative;
     width: 339px;
     height: 232px;
-    background-color: rgba(49, 50, 55, 0.7); /* RGBA for transparency */
+    background-color: #313237b3; /* RGBA for transparency */
     backdrop-filter: blur(10px); /* Apply blur effect to background */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     box-shadow: 5px 14px 14.7px 2px #0000005C;
@@ -559,10 +562,10 @@ img {
 }
 
 .projects .dott{
-    background-color: #FF205A;
-    width: 9px;
-    height: 9px;
-    margin-top: 8px;
+    background-color: #9dfdd5;
+    width: 200px;
+    height: 2px;
+    margin-top: 10px;
     margin-left: 10px;
     border-radius: 100px;
 }
@@ -819,7 +822,6 @@ img {
 .footer{
     width: 1121px;
     height: 42px;
-    margin-top: 19px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -889,4 +891,96 @@ img {
     line-height: 15.73px;
     text-align: end;
     font-family: "Product Sans", sans-serif; 
+}
+
+/* Modal */
+.modal-body{
+    margin: 0;
+    padding: 0;
+    background: #00000080;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    width: 702px;
+    height: 273px;
+    gap: 0px;
+    border-radius: 11px;
+    background: #313237;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-head{
+    width: 643px;
+    height: 38px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.modal-heading p{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    font-family: "Product Sans", sans-serif; 
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.close-modal a{
+    text-decoration: none;
+    color: white;
+    font-family: "Product Sans", sans-serif; 
+    font-size: 12px;
+    background: linear-gradient(90deg, #FF7A00 -38.55%, #FF4117 42.23%, #FF0099 126.34%);
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 2px;
+    border-radius: 6px;
+}
+
+.modal-cont{    
+    width: 643px;
+    height: 166px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-line{
+    width: 643px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-line p{
+    color: white;
+    font-family: "Product Sans", sans-serif; 
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.info-line span{
+    color: #A4A4A4;
+    font-weight: 500;
 }
